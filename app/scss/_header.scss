@@ -6,6 +6,10 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 4rem;
+
+		@include breakpoint-up(medium) {
+			margin-bottom: 7.5rem;
+		}
 	}
 
 	&__logo {

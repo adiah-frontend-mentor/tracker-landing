@@ -1,5 +1,11 @@
 main {
 
+	@include breakpoint-up(medium){
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.graphic::before {
 		content: '';
 		position: absolute;
@@ -12,18 +18,34 @@ main {
 		right: 0;
 		z-index: -1;
 		border-bottom-left-radius: 59px;
+
+		@include breakpoint-up(medium) {
+			height: 26.625rem;
+			width: 37.063rem; 
+		}
 	}
 
 	.graphic {
 		margin-bottom: 5.5rem;
 		
+		@include breakpoint-up(medium) {
+			width: 30vw;
+			height: 70vh;
+			order: 2;
+		}
+		
 		img {
 			height: 14.9375rem;
+			// position: absolute;
 			position: relative;
 			left: -2.25rem;
 			z-index: 0;
+			@include breakpoint-up(medium) {
+				height: 28.4375rem;
+				// left: 37.25rem; 
+				// top: 5rem;
+			}
 		}
-		
 	}
 
 	.hero {
@@ -55,6 +77,10 @@ main {
 			font-size: 2.4375rem;
 			line-height: 1;
 			margin-bottom: 1.625rem;
+
+			@include breakpoint-up(medium) {
+				font-size: 4.0625rem;
+			}
 		}
 
 		&__body {
@@ -63,6 +89,10 @@ main {
 			font-weight: 400;
 			color: $darkGrayishBlue;
 			margin-bottom: 2rem;
+
+			@include breakpoint-up(medium){
+				width: 16.6875rem;
+			}
 		}
 
 		&__cta {
