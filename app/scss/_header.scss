@@ -58,6 +58,10 @@
 			color: $veryDarkBlue;
 		}
 
+		a:hover {
+			text-decoration: underline;
+		}
+
 		a:not(:last-child), .circle {
 			margin-right: 2.625rem;
 		}

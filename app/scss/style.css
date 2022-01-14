@@ -205,6 +205,10 @@ a, a:visited, a:hover {
   color: #242942;
 }
 
+.header__links a:hover {
+  text-decoration: underline;
+}
+
 .header__links a:not(:last-child), .header__links .circle {
   margin-right: 2.625rem;
 }
@@ -356,6 +360,13 @@ main .hero__cta button {
   font-weight: 700;
   padding: 0.75rem 0.75rem;
   margin-right: 1.25rem;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+main .hero__cta button:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 main .hero__cta p {
