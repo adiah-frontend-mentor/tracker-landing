@@ -43,6 +43,7 @@ a, a:visited, a:hover {
 
 .page-wrapper {
 	padding: 2.375rem 2rem;
+	overflow-x: hidden;
 
 	@include breakpoint-up(medium){
 		padding: 4rem 10.3125rem 11.0625rem 10.3125rem;
