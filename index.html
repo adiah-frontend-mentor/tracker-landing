@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=**Barlow+Condensed:wght@400;700**&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=**Barlow**&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="app/scss/style.css">
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
@@ -15,42 +19,53 @@
   </style>
 </head>
 <body>
-  <header class="header">
-    <nav>
-      <a href="" class="header__logo">
-        <img src="images/logo.svg" alt="logo">
-      </a>
-      <a href="#" id="navBtn" class="header__toggle hide-for-desktop">
-        <img src="images/icon-hamburger.svg" alt="Menu toggle button">
-      </a>
-      <!-- <div class="header__links hide-for-mobile">
-        <a href="#">Product</a>
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">Login</a>
-      </div> -->
-    </nav>
-  </header>
-
-  <main>
-    <div class="graphic">
-      <img src="images/illustration-devices.svg" alt="...">
-    </div>
-    <div class="hero">
-      <div class="hero__headline">
-        <div class="tag">New</div>
-        <p>Monograph Dashboard</p>
+  <div class="page-wrapper">
+    <header class="header">
+      <nav class="header__nav">
+        <a href="" class="header__logo">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <a href="#" id="navBtn" class="header__toggle hide-for-desktop">
+          <img id="btnImage" src="images/icon-hamburger.svg" alt="Menu toggle button">
+        </a>
+        <div class="header__links hide-for-mobile">
+          <a href="#">Product</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <div class="circle"></div>
+          <a href="#">Login</a>
+        </div>
+      </nav>
+      <div class="header__menu has-fade">
+        <a href="#">PRODUCT</a>
+        <a href="#">FEATURES</a>
+        <a href="#">PRICING</a>
+        <hr>
+        <a href="#">LOGIN</a>
       </div>
+    </header>
 
-      <h1>Powerful insights into your team</h1>
-      <p class="hero__body">Project planning and time tracking for agile teams</p>
-
-      <div class="hero__cta">
-        <button>Schedule a demo</button>
-        <p>to see a live preview</p>
+    <main>
+      <div class="graphic">
+        <img src="images/illustration-devices.svg" alt="...">
       </div>
-    </div>
-  </main>
+      <div class="hero">
+        <div class="hero__headline">
+          <div class="tag">New</div>
+          <p>Monograph Dashboard</p>
+        </div>
+
+        <h1>Powerful insights into your team</h1>
+        <p class="hero__body">Project planning and time tracking for agile teams</p>
+
+        <div class="hero__cta">
+          <button>Schedule a demo</button>
+          <p>to see a live preview</p>
+        </div>
+      </div>
+    </main>
+
+  </div>
  
   <footer>
     <p class="attribution">
@@ -59,5 +74,6 @@
     </p>
   </footer>
 
+  <script src="app/js/script.js"></script>
 </body>
 </html>
