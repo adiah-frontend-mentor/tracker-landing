@@ -366,7 +366,7 @@ main .hero__cta button {
 
 main .hero__cta button:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 main .hero__cta p {
